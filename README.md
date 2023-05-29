@@ -17,7 +17,6 @@ sudo chown $USER /dev/ttyUSB0
 A -> A <br>
 B -> B <br>
 
-TODO
 ## Connecting Two computers with RS485
 TODO
 ## Connecting RS485 to computer

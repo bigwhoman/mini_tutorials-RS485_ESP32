@@ -17,6 +17,14 @@ sudo chown $USER /dev/ttyUSB0
 A -> A <br>
 B -> B <br>
 
+### modbus
+
+### diagslave
+
+```
+./diagslave -b 9600 -p none -m rtu /dev/ttyUSB0 
+```
+
 ## Connecting Two computers with RS485
 TODO
 ## Connecting RS485 to computer

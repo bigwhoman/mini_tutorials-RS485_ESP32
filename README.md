@@ -5,6 +5,14 @@ TODO
 ## Usage of RS485
 TODO
 ## Setting up RS485
+### driver
+https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/linux
+sudo modprobe ch341
+ls /dev/tty*
+sudo dmesg | grep tty
+sudo chown $USER /dev/ttyUSB0
+
+###
 TODO
 ## Connecting Two computers with RS485
 TODO

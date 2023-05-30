@@ -78,8 +78,8 @@ Then, make sure that the buad rates on both computers are the same so that they 
 Now try to first, read the values of slave registers with <b>read coil</b> and then change them randomly. <br>
 You should see the that the register values would change on the second PC.
 
-## Connecting RS485 to computer
-#### Connect ESP32 
+## Connecting RS485 to ESP32
+#### Connect ESP32 to PC
 ```
 sudo chown $USER /dev/ttyUSB0
 ```

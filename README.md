@@ -2,8 +2,6 @@
 Setting up RS485 and then connecting it to ESP32 module
 ## What is RS485
 RS-485 is a standard for serial communication transmission of data. It is used in a wide range of applications, such as industrial automation, instrumentation, and control systems. RS-485 is a differential communication standard, which means that it uses two wires to transmit data.
-
-RS-485 supports multi-drop communication, which means that multiple devices can be connected to the same bus, allowing them to communicate with each other. It also supports long-distance communication, with data rates of up to 10 Mbps over short distances and up to 100 kbps over long distances of up to 1200 meters. <br>
 The image below demonstrates how RS485 works.<br>
 
 ![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/a36be1b7-d303-4cdf-a6f8-6c481f991b14)

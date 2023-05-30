@@ -33,6 +33,7 @@ B -> B <br>
 TODO
 ## Connecting RS485 to computer
 ### Parity
+### Boot Button
 ### Example Codes
 ```ino
 #include <ModbusRTU.h>

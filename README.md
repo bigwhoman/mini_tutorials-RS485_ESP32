@@ -18,8 +18,18 @@ https://github.com/birdtechstep/modbus-esp
 
 
 ### connection 
+UART
+#### RS485 to RS485
 A -> A <br>
 B -> B <br>
+#### UART to RS485
+
+VCC --> 3V3
+GND --> GND
+---------
+RO  --> RX2
+DI  --> TX2
+DE + RE --> Serial
 
 ### modbus
 

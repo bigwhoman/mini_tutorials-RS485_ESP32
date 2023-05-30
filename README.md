@@ -32,4 +32,49 @@ B -> B <br>
 ## Connecting Two computers with RS485
 TODO
 ## Connecting RS485 to computer
-TODO
+### Parity
+### Example Codes
+```ino
+#include <ModbusRTU.h>
+
+#define SLAVE_ID 1
+#define FIRST_REG 0
+#define REG_COUNT 10
+
+ModbusRTU mb;
+
+bool ToggleFlag= true;
+
+void setup() {
+  pinMode(2,OUTPUT);
+  
+  Serial.begin(115200);
+
+  Serial2.begin(115200);
+  mb.begin(&Serial2, 5);
+
+  mb.slave(SLAVE_ID);
+  mb.addCoil(FIRST_REG,0,REG_COUNT);
+}
+
+unsigned long int premillise = 0;
+
+void loop() {
+
+  if (millis() - premillise >= 5000) {
+  
+    
+
+    Serial.print("Status Coil bit 8: ");
+    
+    Serial.println(mb.Coil(1));
+    
+//    digitalWrite(2,mb.Coil(8));
+     
+    premillise = millis();
+  }
+
+  mb.task();
+  yield();
+}
+```

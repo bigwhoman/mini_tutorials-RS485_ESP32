@@ -35,6 +35,8 @@ TODO
 ### Parity
 ### Boot Button
 ### Example Codes
+
+#### read
 ```ino
 #include <ModbusRTU.h>
 
@@ -71,6 +73,57 @@ void loop() {
     Serial.println(mb.Coil(1));
     
 //    digitalWrite(2,mb.Coil(8));
+     
+    premillise = millis();
+  }
+
+  mb.task();
+  yield();
+}
+```
+#### write integer
+```ino
+#include <ModbusRTU.h>
+
+#define SLAVE_ID 1
+#define FIRST_REG 0
+#define REG_COUNT 10
+
+ModbusRTU mb;
+
+bool ToggleFlag= true;
+
+void setup() {
+  pinMode(2,OUTPUT);
+  
+  Serial.begin(115200);
+
+  Serial2.begin(115200);
+  mb.begin(&Serial2, 5);
+
+  mb.slave(SLAVE_ID);
+  mb.addIreg(FIRST_REG,1506,REG_COUNT);
+}
+
+unsigned long int premillise = 0;
+
+void loop() {
+
+  if (millis() - premillise >= 5000) {
+  
+    if(ToggleFlag == true){
+      for(int i=0;i<=9;i++){
+        mb.Ireg(i,888);    
+      }
+      ToggleFlag = false;
+    }
+    else if(ToggleFlag == false){
+      for(int i=0;i<=9;i++){
+        mb.Ireg(i,1506);    
+      }
+      ToggleFlag = true;
+    }
+
      
     premillise = millis();
   }

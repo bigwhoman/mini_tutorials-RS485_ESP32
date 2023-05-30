@@ -194,4 +194,4 @@ void loop() {
 Now upload the codes onto ESP32, if you get stuck during connecting phase, hold the <b>boot</b> button on the ESP32 board.
 
 #### Parity
-Make sure that the parity bits on the slave and master are the same, otherwise you would get parity error...
+Make sure that the parity bits on the slave and master are the same, otherwise you would get parity error.

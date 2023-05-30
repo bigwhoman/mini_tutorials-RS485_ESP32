@@ -13,6 +13,8 @@ ls /dev/tty*
 sudo dmesg | grep tty
 sudo chown $USER /dev/ttyUSB0
 ```
+### modbus_RTU
+
 ### connection 
 A -> A <br>
 B -> B <br>

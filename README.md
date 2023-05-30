@@ -45,10 +45,10 @@ sudo chown $USER /dev/ttyUSB0
 #### Parity
 #### Boot Button
 
-### Example Codes
+### Example Codes as Slave
 
 
-#### Read
+#### Read register
 ```ino
 #include <ModbusRTU.h>
 

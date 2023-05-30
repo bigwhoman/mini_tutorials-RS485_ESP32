@@ -83,7 +83,6 @@ You should see the that the register values would change on the second PC.
 ```
 sudo chown $USER /dev/ttyUSB0
 ```
-#### Parity
 
 ### modbus_RTU
 This library is used to work with RS485 on ESP32 module. <br>
@@ -193,3 +192,6 @@ void loop() {
 
 #### Boot Button
 Now upload the codes onto ESP32, if you get stuck during connecting phase, hold the <b>boot</b> button on the ESP32 board.
+
+#### Parity
+Make sure that the parity bits on the slave and master are the same, otherwise you would get parity error...

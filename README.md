@@ -72,7 +72,12 @@ Now we will set our wanted function. <br>
 
 
 ## Connecting Two computers with RS485
-TODO
+
+To do this, download the slave app on another computer and connect both computers using the RS485 module. <br>
+Then, make sure that the buad rates on both computers are the same so that they could exchange the data. <br>
+Now try to first, read the values of slave registers with <b>read coil</b> and then change them randomly. <br>
+You should see the that the register values would change on the second PC.
+
 ## Connecting RS485 to computer
 #### Connect ESP32 
 ```

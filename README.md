@@ -24,29 +24,31 @@ A -> A <br>
 B -> B <br>
 #### UART to RS485
 
+```
 VCC --> 3V3
 GND --> GND
 ---------
 RO  --> RX2
 DI  --> TX2
-DE + RE --> Serial
+DE + RE --> Serial X
+```
 
 ### modbus
-
-### diagslave
-
-```
-./diagslave -b 9600 -p none -m rtu /dev/ttyUSB0 
-```
 
 ## Connecting Two computers with RS485
 TODO
 ## Connecting RS485 to computer
-### Parity
-### Boot Button
+#### Connect ESP32 
+```
+sudo chown $USER /dev/ttyUSB0
+```
+#### Parity
+#### Boot Button
+
 ### Example Codes
 
-#### read
+
+#### Read
 ```ino
 #include <ModbusRTU.h>
 
@@ -91,7 +93,7 @@ void loop() {
   yield();
 }
 ```
-#### write integer
+#### Write Integer
 ```ino
 #include <ModbusRTU.h>
 

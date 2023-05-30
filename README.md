@@ -140,9 +140,9 @@ void loop() {
   yield();
 }
 ```
-#### Read Coil
+<!-- #### Write Coil
 ```ino
-```
+``` -->
 
 #### Boot Button
 Now upload the codes onto ESP32, if you get stuck during connecting phase, hold the <b>boot</b> button on the ESP32 board.

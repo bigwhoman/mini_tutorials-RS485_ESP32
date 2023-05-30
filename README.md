@@ -14,6 +14,8 @@ sudo dmesg | grep tty
 sudo chown $USER /dev/ttyUSB0
 ```
 ### modbus_RTU
+https://github.com/birdtechstep/modbus-esp
+
 
 ### connection 
 A -> A <br>

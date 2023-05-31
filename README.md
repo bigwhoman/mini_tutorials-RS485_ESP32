@@ -4,7 +4,8 @@ Setting up RS485 and then connecting it to ESP32 module
 RS-485 is a standard for serial communication transmission of data. It is used in a wide range of applications, such as industrial automation, instrumentation, and control systems. RS-485 is a differential communication standard, which means that it uses two wires to transmit data.
 The image below demonstrates how RS485 works.<br>
 
-![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/a36be1b7-d303-4cdf-a6f8-6c481f991b14)
+![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/9c25cefd-ca7d-41b1-b350-20da393280b1)
+
 
 ## Usage of RS485
 RS-485 is often used in industrial settings where reliable and robust communication is required, such as in factory automation, process control, and building automation systems.
@@ -39,7 +40,7 @@ DI  --> TX2
 DE + RE --> Serial X
 ```
 
-![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/74151021-8bdd-4a32-b60c-9231c4629953)
+![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/70198908-f42d-4f00-99fc-5a3477e2b66d)
 
 
 ## Modbus Poll
@@ -55,7 +56,7 @@ You could also download the Modbus slave on another computer and connect them wi
 ### Modbus Poll Interface
 First, we go to <b>Connection -> Connection Setup</b> to setup our connection.<br>
 
-![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/1e1e0297-3b7b-417a-8c25-429500138bbe)
+![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/11657666-627e-49e1-84b1-7394cba7a0d9)
 
 <br>
 
@@ -63,14 +64,13 @@ Then we go to <b>Functions</b> to select the wanted modbus function. <br>
 
 Modbus functions will be as below. 
 
-![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/0d34db7f-d0bb-4caf-ba19-a4db21d62f81)
-
-![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/38ea8581-6264-464c-934c-b29aa0945bba)
+![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/a24a3dd1-2a7d-4005-81bc-2ac3f5e8f19f)
+![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/bc2eda4a-ed50-4553-b4db-ea4f0c1727df)
 
 
 Now we will set our wanted function. <br>
 
-![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/175c9835-d914-4576-8ca6-aaa0dc0e4207)
+![image](https://github.com/bigwhoman/mini_tutorials-RS485_ESP32/assets/79264715/4ab9c16b-36be-4a1f-8e83-a44594029ace)
 
 
 ## Connecting Two computers with RS485
